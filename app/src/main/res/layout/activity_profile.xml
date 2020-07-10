@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorMilk"
+    tools:context=".ProfileActivity">
+
+    <ImageView
+        android:layout_width="276dp"
+        android:layout_height="221dp"
+        android:layout_marginTop="108dp"
+        android:src="@drawable/pika"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/text"
+        android:textColor="@color/colorBlack"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/profLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.643"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.585" />
+
+    <EditText
+        android:id="@+id/profLogin"
+        android:hint="@string/login"
+        android:maxLines="1"
+        android:maxLength="16"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/profPassword"
+        android:layout_margin="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/profPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="40dp"
+        android:hint="@string/password"
+        android:inputType="numberPassword"
+        android:maxLength="16"
+        android:maxLines="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.669"
+        tools:layout_editor_absoluteX="40dp" />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:text="@string/update"
+        android:textStyle="bold"
+        android:textColor="@color/colorBlack"
+        app:layout_constraintTop_toBottomOf="@id/profPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btnBack"
+        android:layout_width="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/rounded_corners"
+        android:backgroundTint="@color/colorYellow"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:text="@string/back"
+        android:textColor="@color/colorMilk"
+        android:textStyle="bold"
+        android:background="@drawable/rounded_corners"
+        android:backgroundTint="@color/colorBlack"
+        app:layout_constraintTop_toBottomOf="@id/profPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btnUpdate"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="0dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_height="wrap_content" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

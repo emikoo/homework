@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="175dp"
+        android:layout_height="165dp"
+        android:src="@drawable/pokemonball"
+        app:layout_constraintBottom_toTopOf="@id/etLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etLogin"
+        android:hint="@string/login"
+        android:maxLines="1"
+        android:maxLength="16"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/etPassword"
+        android:layout_margin="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="40dp"
+        android:hint="@string/password"
+        android:inputType="numberPassword"
+        android:maxLength="16"
+        android:maxLines="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.609"
+        tools:layout_editor_absoluteX="52dp" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="10dp"
+        android:text="@string/log_in"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btnSignUp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etPassword"
+        android:background="@drawable/rounded_corners"
+        android:backgroundTint="@color/colorRed"
+        app:layout_constraintVertical_bias="0.333" />
+
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="20dp"
+        android:text="@string/sign_up"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btnLogin"
+        android:background="@drawable/rounded_corners"
+        android:backgroundTint="@color/colorBlack"
+        app:layout_constraintTop_toBottomOf="@id/etPassword"
+        app:layout_constraintVertical_bias="0.333" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

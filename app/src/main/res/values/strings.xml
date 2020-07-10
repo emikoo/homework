@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">SharedPreferenceHW</string>
+    <string name="log_in">Log in</string>
+    <string name="sign_up">Sign up</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="text">MY ACCOUNT</string>
+    <string name="update">update</string>
+    <string name="back">back</string>
+</resources>
